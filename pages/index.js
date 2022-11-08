@@ -24,7 +24,9 @@ function HomePage()
             }}>
                 <Menu />
                 <Header />
-                <TimeLine playlists={config.playlists} />
+                <TimeLine playlists={config.playlists} >
+                    conteúdo
+                    </TimeLine>
             </div>
         </>
 
@@ -32,6 +34,9 @@ function HomePage()
 }
 
 export default HomePage
+module.exports = {
+    pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
+}
 
 /*function Menu()
 {
